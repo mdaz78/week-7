@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
+import Propdrilling from "./pages/Propdrilling";
 
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Landing = React.lazy(() => import("./pages/Landing"));
@@ -26,6 +27,14 @@ function App() {
             element={
               <Suspense fallback={<Loading />}>
                 <Dashboard />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/propDrilling"
+            element={
+              <Suspense fallback={<Loading />}>
+                <Propdrilling />
               </Suspense>
             }
           />

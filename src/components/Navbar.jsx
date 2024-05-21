@@ -10,6 +10,7 @@ const Navbar = () => {
 
       <button onClick={() => navigate("/")}>Landing</button>
       <button onClick={() => navigate("/dashboard")}>Dashboard</button>
+      <button onClick={() => navigate("/propDrilling")}>propDrilling</button>
     </div>
   );
 };
